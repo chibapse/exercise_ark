@@ -11,3 +11,13 @@ cpanm LWP::Protocol::https
 
 でインストール
 
+
+* ```use v5.20.8```　は、```use v5.22.1```に変更した
+
+* 4日目```script/migrate.pl```の実行でGitDLLがないというエラーが出る。
+
+```
+cmanm GitDLL
+```
+
+でインストール

@@ -26,7 +26,7 @@ __PACKAGE__->add_columns(
     email => VARCHAR,
     expires_at => DATETIME
     created_at => DATETIME,
-    updated_at => DATETIME,
+    updated_at => DATETIME
 );
 
 __PACKAGE__->set_primary_key('id');
