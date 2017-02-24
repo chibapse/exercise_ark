@@ -24,9 +24,18 @@ __PACKAGE__->add_columns(
     ),
     is_activated => TINYINT,
     email => VARCHAR,
-    expires_at => DATETIME
+    expires_at => DATETIME,
     created_at => DATETIME,
-    updated_at => DATETIME
+    updated_at => DATETIME,
+    company => TEXT (
+        is_nullable => 1,
+    ),
+    logo => TEXT (
+        is_nullable => 1,
+    ),
+    url => TEXT (
+        is_nullable => 1,
+    ),
 );
 
 __PACKAGE__->set_primary_key('id');

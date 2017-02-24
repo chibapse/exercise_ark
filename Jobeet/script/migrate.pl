@@ -1,4 +1,5 @@
-use v5.22.1;
+#!/usr/bin/env perl
+
 use strict;
 use warnings;
 use utf8;
@@ -16,8 +17,8 @@ GetOptions(
 
 my $dsn = models('conf')->{database}->[0];
 my $gd = GitDDL->new(
-    work_tree => './',
-    ddl_file  => './sql/schema.sql',
+    work_tree => '../',
+    ddl_file  => './Jobeet/sql/schema.sql',
     dsn       => models('conf')->{database},
 );
 

@@ -16,8 +16,13 @@ cpanm LWP::Protocol::https
 
 * 4日目```script/migrate.pl```の実行でGitDLLがないというエラーが出る。
 
-```
-cmanm GitDLL
-```
+cpanfileにインストールするモジュールを記述して、```carton install```すればいいらしい。
 
-でインストール
+
+* テーブルのスキーマを更新して```./script/migrate.pl```実行するとテーブルが存在するというエラーが出る
+
+[ここ](https://github.com/massanex/ark/issues/30)を参考にするも解決せず。。。
+
+→　とりあえず後でじっくり考える
+
+

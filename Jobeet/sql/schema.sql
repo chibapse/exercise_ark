@@ -31,6 +31,11 @@ CREATE TABLE jobeet_job (
   is_activated TINYINT NOT NULL DEFAULT 0,
   email VARCHAR(255) NOT NULL,
   expires_at DATETIME NOT NULL,
+  created_at DATETIME NOT NULL,
+  updated_at DATETIME NOT NULL,
+  company TEXT,
+  logo TEXT,
+  url TEXT,
   FOREIGN KEY (category_id) REFERENCES jobeet_category(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
