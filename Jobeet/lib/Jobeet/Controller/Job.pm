@@ -7,7 +7,9 @@ use Jobeet::Models;
 sub index :Path {
     my ($self, $c) = @_;
 
-    $c->stash->{jobs} = models('Schema::Job');
+    # $c->stash->{jobs} = models('Schema::Job');
+    # $c->stash->{jobs} = models('Schema::Job')->get_active_jobs;
+    $c->stash->{categories} = models('Schema::Category')->get_with_jobs;
 }
 
 # /job/{job_token} (詳細)

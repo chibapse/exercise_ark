@@ -29,3 +29,6 @@ cpanfileにインストールするモジュールを記述して、```carton in
 * 5日目 ダウンロードしたcssの置き場所が```web/css```となっていたが、cssがロードできなかったので```root/css```に変更した。
 
 
+* 7日目 ```$ DBIC_TRACE=1 carton exec plackup dev.psgi```を実行してアクセスしても```SELECT me.id ....```が表示されない。
+
+

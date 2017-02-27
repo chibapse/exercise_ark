@@ -1,6 +1,7 @@
 requires 'Ark';
 requires 'DateTime';
 requires 'DateTime::Format::SQLite';
+requires 'Data::Page::Navigation';
 requires 'DBIx::Class';
 requires 'FindBin::libs';
 requires 'GitDDL';

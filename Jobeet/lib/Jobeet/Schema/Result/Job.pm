@@ -4,6 +4,7 @@ use strict;
 use warnings;
 use parent 'Jobeet::Schema::ResultBase';
 use Jobeet::Schema::Types;
+use Jobeet::Models;
 
 __PACKAGE__->table('jobeet_job');
 
@@ -42,5 +43,14 @@ __PACKAGE__->set_primary_key('id');
 __PACKAGE__->add_unique_constraint(['token']);
 
 __PACKAGE__->belongs_to( category => 'Jobeet::Schema::Result::Category', 'category_id' );
+
+sub insert {
+    my $self = shift;
+    my $conf = models('conf')->{active_days};
+    $self->expires_at( models('Schema')->now->add( days => $conf ) );
+
+    # $self->expires_at( models('Schema')->now->add( days => models('conf')->{active_days} ) );
+    $self->next::method(@_);
+}
 
 1;
