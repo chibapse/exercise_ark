@@ -1,5 +1,6 @@
 package Jobeet;
 use Ark;
+use Data::Page::Navigation;
 
 use_model 'Jobeet::Models';
 our $VERSION = '0.01';
