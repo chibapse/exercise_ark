@@ -7,6 +7,7 @@ requires 'FindBin::libs';
 requires 'GitDDL';
 requires 'SQL::Translator';
 requires 'Path::Class';
+requires 'CGI::Simple'
 requires 'String::CamelCase';
 requires 'Text::MicroTemplate::Extended';
 requires 'Text::MicroTemplate::DataSection';
