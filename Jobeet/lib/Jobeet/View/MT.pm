@@ -9,6 +9,3 @@ has '+macro' => default => sub {
 };
 
 __PACKAGE__->meta->make_immutable;
-
-
-
