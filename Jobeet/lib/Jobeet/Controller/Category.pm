@@ -3,7 +3,13 @@ use Ark 'Controller';
 
 use Jobeet::Models;
 
-
+# テストすべきこと
+# 
+# ・/category/{category_name}で正しくコントローラーが呼ばれているか？
+# ・存在しない場合ただしく404ページが表示されるかどうか
+# ・存在するカテゴリの場合 stash にただしくデータが入っているかどうか
+# ・page パラメータがわたされたときページオブジェクトが連動しているかどうか
+# 
 sub show :Path :Args(1) {
     my ($self, $c, $category_name) = @_;
 
