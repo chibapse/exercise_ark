@@ -768,6 +768,14 @@ DISTRIBUTIONS
       parent 0
       strict 0
       warnings 0
+  DateTime-Format-W3CDTF-0.06
+    pathname: G/GW/GWILLIAMS/DateTime-Format-W3CDTF-0.06.tar.gz
+    provides:
+      DateTime::Format::W3CDTF 0.06
+    requirements:
+      DateTime 0
+      ExtUtils::MakeMaker 6.42
+      Test::More 0.61
   DateTime-Locale-1.12
     pathname: D/DR/DROLSKY/DateTime-Locale-1.12.tar.gz
     provides:

@@ -24,4 +24,11 @@ sub show :Path :Args(1) {
 }
 
 
+sub atom :Local {
+    my ($self, $c) = @_;
+    $c->res->content_type('application/atom+xml; charset=utf-8');
+}
+
+
+
 1;
