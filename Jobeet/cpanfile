@@ -10,6 +10,7 @@ requires 'Path::Class';
 requires 'CGI::Simple';
 requires 'String::CamelCase';
 requires 'Cache::FastMmap';
+requires 'Locale::Maketext::Lexicon';
 requires 'DateTime::Format::W3CDTF';
 requires 'Text::MicroTemplate::Extended';
 requires 'Text::MicroTemplate::DataSection';
