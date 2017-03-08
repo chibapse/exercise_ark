@@ -14,9 +14,9 @@ cpanm LWP::Protocol::https
 
 * ```use v5.20.8```　は、```use v5.22.1```に変更した
 
-* 4日目```script/migrate.pl```の実行でGitDLLがないというエラーが出る。
+~~* 4日目```script/migrate.pl```の実行でGitDLLがないというエラーが出る。
 
-cpanfileにインストールするモジュールを記述して、```carton install```すればいいらしい。
+~~cpanfileにインストールするモジュールを記述して、```carton install```すればいいらしい。
 
 
 * テーブルのスキーマを更新して```./script/migrate.pl```実行するとテーブルが存在するというエラーが出る
